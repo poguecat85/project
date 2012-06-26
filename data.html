@@ -1,0 +1,75 @@
+<!--
+	Anthony Pogue
+	Project 2
+	Term 1203
+	ASD
+-->
+
+<!DOCTYPE HTML>  
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		
+		<title>Serial Box</title>
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	
+	</head>
+
+	<body>
+		<!-- Import Data -->
+<div data-role="page" id="dataimport">
+	<div data-role="header" data-theme="a" >
+		<h1 id="dataimport">Import Data</h1>
+	</div>
+	<!-- /header -->
+	<div data-role="content" class="content">
+
+
+		<!-- Web Service Data Imported XHR -->
+		<div id="getdata" data-role="fieldcontain">
+				<div id="get-data-buttons">
+					<div class="ui-grid-b">
+						<p style="text-align: center;">Import Data</p>
+						<div class="ui-block-b">
+							<a href="#" data-role="button" data-theme="a" id="jsondata">JSON</a>
+						</div>
+
+						<div class="ui-block-c">
+							<a href="#" data-role="button" data-theme="a" id="xmldata">XML</a>
+						</div>
+
+						<div class="ui-block-c">
+							<a href="#" data-role="button" data-theme="a" id="csvdata">CSV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div id="data">
+		</div>
+	</div>
+</div>
+		
+
+		
+		<!-- JavaScript under here (libs, addons, custom scripts)-->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

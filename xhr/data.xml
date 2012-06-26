@@ -1,0 +1,21 @@
+
+<contacts>
+	<contact>
+		<title>Contact 1</title>
+		<type>Personal</type>
+		<name>Mitchell Pogue</name>
+		<email>mapjr1508@gmail.com</email>
+		<username>mapjr1508</username>
+		<password>pass</password>
+		<cnfrmpass>pass</cnfrmpass>
+	</contact>
+	<contact>
+		<title>Contact 2</title>
+		<type>Business</type>
+		<name>Anthony Pogue</name>
+		<email>antp85@gmail.com</email>
+		<username>antp85</username>
+		<password>myword</password>
+		<cnfrmpass>myword</cnfrmpass>
+	</contact>
+</contacts>

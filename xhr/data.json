@@ -1,0 +1,96 @@
+{
+	"contacts":[{
+		"group": "Personal",
+		"flname": "Mitchell Pogue",
+		"addy": "mapjr1508@gmail.com",
+		"user": "mapjr1508",
+		"pass": "pass",
+		"serialNum": "A83OUH3OIH20HF84HF98H",
+		"itemName": "iMac"
+	},
+	{
+		"group": "Business",
+	   "flname": "Anthony Pogue",
+	   "addy": "antp85@gmail.com",
+	   "user": "antp85",
+	   "pass": "pword",
+	   "itemName": "MacBook Pro",
+	   "serialNum": "89H29R8H23098HR1908H"
+
+	},
+	{
+		"group": "Both",
+	   "flname": "William Vese",
+	   "addy": "wivese86@yahoo.com",
+	   "user": "wivese86",
+	   "pass": "pass",
+	   "itemName": "iPhone 4",
+	   "serialNum": "A09F8H908HWF09AHJ20FH"
+	},
+	{
+		"group": "Personal",
+	   "flname": "Latoya Stokes",
+	   "addy": "lsp1508@gmail.com",
+	   "user": "lsp1508",
+	   "pass": "pword",
+	   "itemName": "iPad 2",
+	   "serialNum": "AOIEHF01U039UF039H"
+
+	},
+	{
+		"group": "Business",
+	   "flname": "Tamra Robinson",
+	   "addy": "trbless65@yahoo.com",
+	   "user": "trbless65",
+	   "pass": "mypass",
+	   "itemName": "iPad",
+	   "serialNum": "ASDOPFAIHEOIHAOWEIFJ30J"
+	},
+	{
+		"group": "Personal",
+	   "flname": "Michael Mitchell",
+	   "addy": "mikemitch@gmail.com",
+	   "user": "mikemitch",
+	   "pass": "thepass",
+	   "itemName": "MacBook Air",
+	   "serialNum": "AFJAFOIJWFOAIJ093"
+	},
+	{
+		"group": "Business",
+	   "flname": "Diamond Dunmore",
+	   "addy": "diamond@gmail.com",
+	   "user": "diamond",
+	   "pass": "thispass",
+	   "itemName": "iPod Touch",
+	   "serialNum": "AOFIJA298H9348HAFH"
+
+	},
+	{
+		"group": "Both",
+	   "flname": "Jason Phillip",
+	   "addy": "jphil@gmail.com",
+	   "user": "jphil",
+	   "pass": "hispass",
+	   "itemName": "iMac",
+	   "serialNum": "AFJF3OIJF83J2F82J9AF8HJ"
+	},
+	{
+		"group": "Personal",
+	   "flname": "Javon Lambert",
+	   "addy": "jlambert@gmail.com",
+	   "user": "jlambert",
+	   "pass": "kidpass",
+	   "itemName": "iPad 2",
+	   "serialNum": "AFJEPOAWIJFEWOPIJFAOFJIWAJF"
+
+	},
+	{
+	"group": "Personal",
+	   "flname": "Jeremiah Lambert",
+	   "addy": "jelambert@gmail.com",
+	   "user": "jelambert",
+	   "pass": "thispass",
+	   "itemName": "iPhone 4s",
+	   "serialNum": "AOFIHEWPOFH2398"
+	}
+]}

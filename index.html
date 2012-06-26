@@ -1,0 +1,239 @@
+<!--
+	Anthony Pogue
+	Project
+	Term 1203
+	ASD
+-->
+
+<!DOCTYPE HTML>  
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		
+		<title>Serial Box</title>
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="libs/modernizr.custom.min.js"></script>
+	
+	</head>
+
+	<body>
+		<!-- launch page -->
+		<div data-role="page" id="launch">
+			<div data-role="header" data-position="fixed">
+				<h1>Serial Box</h1>
+			</div>
+		
+			<div data-role="content">
+				<!-- use h3 tags for button titles (preferred) and p tags for details -->
+				<a href="#home" data-role="button">
+					<img src="images/serialboximg.jpg" alt="Serial Box" />
+				</a>
+			</div>
+		</div>
+		<!-- home page -->
+		<div data-role="page" id="home">
+			<div data-role="header" data-position="fixed">
+				<h1>Serial Box</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true">
+					<!-- use h3 tags for button titles (preferred) and p tags for details -->
+					<li>
+						<a href="#success">
+							<img src="images/loginicon.jpg" />
+							<h3>Manage Contacts</h3>
+							<p>Access your serial box!</p>
+						</a>
+					</li>
+					<li>
+						<a href="#signup">
+							<img src="images/both.png" />
+							<h3>Add Contacts</h3>
+							<p>Add to your serial box!</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div data-role="footer" data-position="fixed">
+				<h4>Drop-off your serial numbers!</h4>
+			</div>
+		</div>
+
+		<!-- signup page -->
+		<div data-role="page" id="signup">
+			<div data-role="header" data-position="fixed">
+				<h1>Register</h1>
+			</div>
+
+			<div data-role="content">
+				<form action="" method="post" id="recordsignup">
+					<div data-role="fieldcontain">
+						<!-- Input first and last name -->
+						<label for="flname">My name is:</label>
+						<input type="text" id="flname" name="flname" placeholder="First and Last Name" class="required" />
+						</div>
+						
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<!-- Radio button for gender -->
+							<legend>What gender?</legend>
+								<label for="male">Male</label>
+								<input type="radio" id="male" value="Male" name="male" />
+								<label for="female">Female</label>
+								<input type="radio" id="female" value="Female" name="female" />
+						</fieldset>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<!-- Input email Address -->
+						<!-- inline element -->
+						<label for="addy">My email address is:</label>
+						<!-- inline element -->
+						<input type="email" id="addy" name="addy" placeholder="example@email.com" class="required email" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<!-- Input username -->
+						<!-- block element -->
+						<!-- inline element -->
+						<label for="username">I want my username to be:</label>
+						<!-- inline element -->
+						<input type="text" id="username" name="username" placeholder="username" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="itemName">Item Name:</label>
+						<input type="text" id="itemName" name="itemName" placeholder="enter item name" />
+					</div>
+
+					<div data-role="fieldcontain">
+						<label for="serialNum">Serial Number:</label>
+						<input type="text" id="serialNum" name="serialNum" placeholder="enter serial number" />
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="select">What type?</label>
+						<select name="select" id="select" data-native-menu="false">
+						<option data-placeholder="true">Please Select One</option>
+						<optgroup label="What are you using this for?">
+							<option value="personal">Personal</option>
+							<option value="business">Business</option>
+							<option value="both">Both</option>
+						</optgroup>
+						</select>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<input type="submit" value="Submit" data-theme="a" id="submit" />
+					</div>
+					
+					<a href="#signuperrors" id="rberrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+				</form>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="signup">
+				<h4>Be a member, add serial!</h4>
+			</div>
+		</div>
+								
+		<!-- success page -->
+		<div data-role="page" id="success">
+			<div data-role="header" data-position="fixed">
+				<h1>Manage Data</h1>
+			</div>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" id="clear">Clear Stored Data</a></li>
+					<li><a href="#displayPage" id="display">Display Stored Data</a></li>
+					<li><a href="#editPage" id="edit">Edit Stored Data</a></li>
+					<li><a href="#deletePage"id="delete">Delete Stored Data</a></li>
+				</ul>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="success">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#itemcount" data-icon="star">Add Serial</a></li>
+						<li><a href="#getitem" data-icon="gear">Get Serial</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--  -->
+		<div data-role="dialog" id="signuperrors">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing fields!</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul>
+					<li>Test</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- display data -->
+		<div data-role="page" id="displayPage">
+			<div data-role="header" data-position="fixed">
+				<h1>Data</h1>
+			</div>
+			
+			<div data-role="content">
+				<div id="dataPlay" data-role="listview">
+				</div>
+			</div>
+		</div>
+		
+		<!-- edit page -->
+		<div data-role="page" id="editPage">
+			<div data-role="header" data-position="fixed">
+				<h1>Register</h1>
+			</div>
+
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="signup">
+				<h4>Be a member, add serial!</h4>
+			</div>
+		</div>
+		
+		<div data-role="dialog" id="editErr">
+			<div data-role="header" data-position="fixed">
+				<h1>Missing fields!</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul>
+					<li>Test</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		
+		<!-- JavaScript under here (libs, addons, custom scripts)-->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<script type="text/javascript" src="jquery.couch.js"></script>
+		<script type="text/javascript" src="libs/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

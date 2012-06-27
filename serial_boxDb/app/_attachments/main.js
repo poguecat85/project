@@ -122,7 +122,7 @@ $('#contactPage').live('pageshow', function () {
 					'<li>Username: '+ user +'</li>'+
 					'<li>Item Name: '+ itemName +'</li>'+
 					'<li>Serial Number: '+ serialNum +'</li>'+
-					'<li><a href="#" id="editLink">Edit Contact</a></li>' + 
+					'<li><a href="#" rel="external" id="editLink">Edit Contact</a></li>' + 
 		        	'<li><a href="#" id="deleteLink">Delete Contact</a></li>'+
 		        '</ul>'+
 		        '</div>' 
